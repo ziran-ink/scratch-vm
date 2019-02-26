@@ -270,6 +270,41 @@ class Scratch3ZiranBlocks {
                     blockIconURI: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAK5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXshTpQAAADl0Uk5TADFVTw5h/toKupuI1EDCKaNIZFaC2/Q/gfVB/VMG2BoHtBuzCbnICKKNHEQfEPn7FwKLqo8EYDANOLww3AAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAAEgAAABIAEbJaz4AAACySURBVEjH7dTHDsIwEEXRoRpCh9BCC733+v7/x1iEBZYYJ7NACih37SM5jmaIosJULG4ukdTPp9LwSWU0kIWVM5ZHQQNFlMxXLqPyx6BakwEbdRGw0WhKQAttR/IN/PnPwOLuwwAHna7oWXt9qIEEkDuEGkkAuWNWMM/KC+7HTaaYiQDNF0sZeG+19toEBNvda/73h2DgeDp7Xa4/NqLfAgFWpT4qN+kyprvfun9QVJh6Ak69Mf1zXJyHAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAyLTI1VDE3OjU1OjUxKzA4OjAwUuL7OAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMi0yNVQxNzo1NTo1MSswODowMCO/Q4QAAABQdEVYdHN2ZzpiYXNlLXVyaQBmaWxlOi8vL2hvbWUvYWRtaW4vaWNvbi1mb250L3RtcC9pY29uX2xjY2kzamY3MmVtL1JlY3RhbmdsZUNvcHkuc3ZnFqdVbgAAAABJRU5ErkJggg=='
                 },
                 '---',
+                    {
+                        opcode: 'setRequestParam__Weixin_LoadLoginQrCode_Api',
+                        text: formatMessage('设置【微信 - 获取登录二维码】的请求参数[PARAM_NAME]值为[PARAM_VALUE]'),
+                        blockType: BlockType.COMMAND,
+                        arguments: {
+                            PARAM_NAME: {
+                                type: ArgumentType.STRING,
+                                menu: 'requestParamNames__Weixin_LoadLoginQrCode_Api'
+                            },
+                            PARAM_VALUE: {
+                                type: ArgumentType.STRING
+                            }
+                        },
+                        blockIconURI: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAadQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZO2PqwAAAIx0Uk5TABVWf5OnpZJ9ShENb9D+xmQF8O1sBCnLIjPuQC/yMAbTlovrsYPlEi5ChAjjB/MCGk3C+yFUA47KH/l4oPr28fi8flXIx1FGhqi/ybSeZyTXlfXMKKwWwFJw4h2a/EsMdGUKXbrolwHZK5CAiN410iDfJk/9nNqYw/S+CVxgWM46MkX33V6KD2tuEE5WqnK1AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAASAAAAEgARslrPgAAAeFJREFUSMftlFdXAjEQhYOgoiIq2Av2roiVFUUUuyIqInYQO/beey/50a5ZzIYlQXzwzXsOh8nM/SCzkw0A//pzySLkisioaGVMbDjuOFW8GvqlTkiM+8GepNTAAGmTU0L5U9NgkOLT2f6MTEiRNovlz6b6IczR0f25eaisyS8o9PdcVCxssaSUCsgFVxkA5QJQAUBlFYoUNH+1FtX0NQAYBKCWz9ahqL6BAjT6d1xQ2WQUIq4ZZJmEsIUCtH73aG7D7Vr4T3uHwprcSQG6qE+ou0fW29c/MGgbsg9LgBGKvSRmeNSBV1xnEwmMBfsHDFZzQIJzEsB4kD/BNSFNtU2KwJS0OD1TF/yn5h4MGOoltQgj7SnoxZHMBlY43Rz6SbdnHq29C4sosYQB13IAoFpBX3kArH4NRs871lDGh4lyEwk0CGdXbXeuo2DD2SK8ipti35PijGG7ATJkI9+gKpze2mYBO+T0dvEFsLfPAgZJ4ACnHZ5DBnBEAlEQHnvtJ6fH+jPfOQNwE/6LnJFLfMCuGC3UEIDumlil3ND8plvA1J2DAnhBCN0/SO1qKwip20fJfp7AD/I8W5gzY+jltQjdz2ZuZRrC3TAI/rS6fNszSfytNq99CwsQ9f7xS+Bfv9IniAC6CoeaVo8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDItMjZUMTY6NTc6MDgrMDg6MDB/MQ3FAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAyLTI2VDE2OjU3OjA4KzA4OjAwDmy1eQAAAFB0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vaG9tZS9hZG1pbi9pY29uLWZvbnQvdG1wL2ljb25fOHM1MG1ueTR5ejYvdHViaWFvemhpenVvLS5zdmcH9iuUAAAAAElFTkSuQmCC'
+                    },
+                {
+                    opcode: 'isSendRequestSuccess__Weixin_LoadLoginQrCode_Api',
+                    text: '发送【微信 - 获取登录二维码】请求成功？',
+                    blockType: BlockType.BOOLEAN,
+                    blockIconURI: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAadQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZO2PqwAAAIx0Uk5TABVWf5OnpZJ9ShENb9D+xmQF8O1sBCnLIjPuQC/yMAbTlovrsYPlEi5ChAjjB/MCGk3C+yFUA47KH/l4oPr28fi8flXIx1FGhqi/ybSeZyTXlfXMKKwWwFJw4h2a/EsMdGUKXbrolwHZK5CAiN410iDfJk/9nNqYw/S+CVxgWM46MkX33V6KD2tuEE5WqnK1AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAASAAAAEgARslrPgAAAeFJREFUSMftlFdXAjEQhYOgoiIq2Av2roiVFUUUuyIqInYQO/beey/50a5ZzIYlQXzwzXsOh8nM/SCzkw0A//pzySLkisioaGVMbDjuOFW8GvqlTkiM+8GepNTAAGmTU0L5U9NgkOLT2f6MTEiRNovlz6b6IczR0f25eaisyS8o9PdcVCxssaSUCsgFVxkA5QJQAUBlFYoUNH+1FtX0NQAYBKCWz9ahqL6BAjT6d1xQ2WQUIq4ZZJmEsIUCtH73aG7D7Vr4T3uHwprcSQG6qE+ou0fW29c/MGgbsg9LgBGKvSRmeNSBV1xnEwmMBfsHDFZzQIJzEsB4kD/BNSFNtU2KwJS0OD1TF/yn5h4MGOoltQgj7SnoxZHMBlY43Rz6SbdnHq29C4sosYQB13IAoFpBX3kArH4NRs871lDGh4lyEwk0CGdXbXeuo2DD2SK8ipti35PijGG7ATJkI9+gKpze2mYBO+T0dvEFsLfPAgZJ4ACnHZ5DBnBEAlEQHnvtJ6fH+jPfOQNwE/6LnJFLfMCuGC3UEIDumlil3ND8plvA1J2DAnhBCN0/SO1qKwip20fJfp7AD/I8W5gzY+jltQjdz2ZuZRrC3TAI/rS6fNszSfytNq99CwsQ9f7xS+Bfv9IniAC6CoeaVo8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDItMjZUMTY6NTc6MDgrMDg6MDB/MQ3FAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAyLTI2VDE2OjU3OjA4KzA4OjAwDmy1eQAAAFB0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vaG9tZS9hZG1pbi9pY29uLWZvbnQvdG1wL2ljb25fOHM1MG1ueTR5ejYvdHViaWFvemhpenVvLS5zdmcH9iuUAAAAAElFTkSuQmCC'
+                },
+                {
+                    opcode: 'getResponseValue__Weixin_LoadLoginQrCode_Api',
+                    text: formatMessage('【微信 - 获取登录二维码】的响应的[FIELD_NAME]值'),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        FIELD_NAME: {
+                            type: ArgumentType.STRING,
+                            menu: 'responseFieldNames__Weixin_LoadLoginQrCode_Api',
+                            defaultValue: '_all'
+                        }
+                    },
+                    blockIconURI: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAadQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZO2PqwAAAIx0Uk5TABVWf5OnpZJ9ShENb9D+xmQF8O1sBCnLIjPuQC/yMAbTlovrsYPlEi5ChAjjB/MCGk3C+yFUA47KH/l4oPr28fi8flXIx1FGhqi/ybSeZyTXlfXMKKwWwFJw4h2a/EsMdGUKXbrolwHZK5CAiN410iDfJk/9nNqYw/S+CVxgWM46MkX33V6KD2tuEE5WqnK1AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAASAAAAEgARslrPgAAAeFJREFUSMftlFdXAjEQhYOgoiIq2Av2roiVFUUUuyIqInYQO/beey/50a5ZzIYlQXzwzXsOh8nM/SCzkw0A//pzySLkisioaGVMbDjuOFW8GvqlTkiM+8GepNTAAGmTU0L5U9NgkOLT2f6MTEiRNovlz6b6IczR0f25eaisyS8o9PdcVCxssaSUCsgFVxkA5QJQAUBlFYoUNH+1FtX0NQAYBKCWz9ahqL6BAjT6d1xQ2WQUIq4ZZJmEsIUCtH73aG7D7Vr4T3uHwprcSQG6qE+ou0fW29c/MGgbsg9LgBGKvSRmeNSBV1xnEwmMBfsHDFZzQIJzEsB4kD/BNSFNtU2KwJS0OD1TF/yn5h4MGOoltQgj7SnoxZHMBlY43Rz6SbdnHq29C4sosYQB13IAoFpBX3kArH4NRs871lDGh4lyEwk0CGdXbXeuo2DD2SK8ipti35PijGG7ATJkI9+gKpze2mYBO+T0dvEFsLfPAgZJ4ACnHZ5DBnBEAlEQHnvtJ6fH+jPfOQNwE/6LnJFLfMCuGC3UEIDumlil3ND8plvA1J2DAnhBCN0/SO1qKwip20fJfp7AD/I8W5gzY+jltQjdz2ZuZRrC3TAI/rS6fNszSfytNq99CwsQ9f7xS+Bfv9IniAC6CoeaVo8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDItMjZUMTY6NTc6MDgrMDg6MDB/MQ3FAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAyLTI2VDE2OjU3OjA4KzA4OjAwDmy1eQAAAFB0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vaG9tZS9hZG1pbi9pY29uLWZvbnQvdG1wL2ljb25fOHM1MG1ueTR5ejYvdHViaWFvemhpenVvLS5zdmcH9iuUAAAAAElFTkSuQmCC'
+                },
+                '---',
             ],
             menus: {
                     'responseFieldNames__Api_QueryVersion_Api': [
@@ -278,7 +313,8 @@ class Scratch3ZiranBlocks {
                             {text: "版本", value: "data"},
                     ],
                         'requestParamNames__Security_Login_Api': [
-                            {text: "密码", value: "password"},
+                            {text: "用户名", value: "username"},
+                            {text: "密码（pass123）", value: "password"},
                         ],
                     'responseFieldNames__Security_Login_Api': [
                         {text: "*全部", value: "_all"},
@@ -336,6 +372,14 @@ class Scratch3ZiranBlocks {
                             {text: "错误提示", value: "message"},
                             {text: "退出码", value: "exitCode"},
                             {text: "命令输出", value: "commandOutput"},
+                    ],
+                        'requestParamNames__Weixin_LoadLoginQrCode_Api': [
+                            {text: "Token", value: "token"},
+                        ],
+                    'responseFieldNames__Weixin_LoadLoginQrCode_Api': [
+                        {text: "*全部", value: "_all"},
+                            {text: "错误提示", value: "message"},
+                            {text: "登录二维码", value: "data"},
                     ],
             }
         };
@@ -773,6 +817,61 @@ class Scratch3ZiranBlocks {
 
     getResponseValue__Tools_ExecuteCommandByBash_Api (args, util) {
         var resp = util.thread._x_response__Tools_ExecuteCommandByBash_Api;
+        if (resp) {
+            if (args.FIELD_NAME == '_all') {
+                return JSON.stringify(resp);
+            } else {
+                return JSON.stringify(resp[args.FIELD_NAME]);
+            }
+        }
+    }
+
+    // 微信 - 获取登录二维码
+
+    setRequestParam__Weixin_LoadLoginQrCode_Api (args, util) {
+        if (args.PARAM_NAME == "") {
+            return;
+        }
+        if (!util.thread._x_request__Weixin_LoadLoginQrCode_Api) {
+            util.thread._x_request__Weixin_LoadLoginQrCode_Api = {
+                apiName: "Weixin_LoadLoginQrCode_Api"
+            };
+        }
+        util.thread._x_request__Weixin_LoadLoginQrCode_Api[args.PARAM_NAME] = args.PARAM_VALUE;
+    }
+
+    isSendRequestSuccess__Weixin_LoadLoginQrCode_Api (args, util) {
+        return new Promise(resolve => {
+            if (!util.thread._x_request__Weixin_LoadLoginQrCode_Api) {
+                util.thread._x_request__Weixin_LoadLoginQrCode_Api = {
+                    apiName: "Weixin_LoadLoginQrCode_Api"
+                };
+            }
+            var request = util.thread._x_request__Weixin_LoadLoginQrCode_Api;
+            nets({
+                body: JSON.stringify(request),
+                url: 'https://api.ziran.ink:8607',
+                timeout: serverTimeoutMs,
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }, (err, resp, body) => {
+                if (err) {
+                    resolve({code:12, message:"无法连接服务器"});
+                } else {
+                    resolve(JSON.parse(body));
+                }
+            });
+        }).then(response => {
+            response._rawRequest = util.thread._x_request__Weixin_LoadLoginQrCode_Api;
+            util.thread._x_response__Weixin_LoadLoginQrCode_Api = response;
+            return response.code == 0;
+        });
+    }
+
+    getResponseValue__Weixin_LoadLoginQrCode_Api (args, util) {
+        var resp = util.thread._x_response__Weixin_LoadLoginQrCode_Api;
         if (resp) {
             if (args.FIELD_NAME == '_all') {
                 return JSON.stringify(resp);
